@@ -1,0 +1,41 @@
+html,body{ margin: 0; padding: 0; font-family: "微软雅黑"; }
+.clearfix:before,.clearfix:after{ display: block; content: "";}
+.clearfix:after{ clear: both;}
+.clearfix{zoom: 1;}
+html,body,.swiper-container,.swiper-wrapper{ height: 100%; }
+.swiper-slide{ height: 100%; background-repeat: no-repeat; -webkit-background-size: cover;
+background-size: cover;background-position: 50% 50%;}
+.slide1{ background-image: url(../images/pic1.jpg); }
+.slide2{ background-image: url(../images/pic2.jpg); }
+.slide3{ background-image: url(../images/pic3.jpg); }
+.slide3{ background-image: url(../images/pic4.jpg); }
+.swiper-pagination-bullet{ width: 15px; height: 15px; background-color: #fff; }
+.avater{ border-radius: 50%; width: 35vw; margin: 0 auto; display: block; margin-top: 20vw; max-width: 150px; border: 2px solid #fff;}
+.slide1 p{ font-size: 3em; text-align: center;}
+.slide2 p{ color: #000; font-size: 1.5em; text-align: center;}
+.slide3 h3{ color: #fff; font-size: 1.5em;text-align: center;}
+.slide3 p{ color: #fff; font-size: 1em; text-align: center;} 
+.slide4 h3{ color: #fff; font-size: 1.5em;text-align: center;}
+.slide4 p{ width: 30%; float: left; margin-left: 13vw; text-align: center; height: 30px; line-height: 30px; background-color: #fff; color: #000; } 
+.xing{ padding-left: 20vw; }
+.arrow{position: fixed;width:30px;z-index: 10;left:50%;margin-left: -15px;-webkit-animation: opacity 1s ease infinite;-o-animation: opacity 1s ease infinite;animation: opacity 1s ease infinite;}
+.music{ position: fixed; top: 10px; right: 10px; z-index: 20; border-radius: 50%; width: 30px; border:1px solid #fff; animation-play-state:running;}
+.myani{transform:rotate(0deg);-webkit-transform:rotate(0deg);animation: music 2s linear infinite;-webkit-animation: music 2s linear infinite;}
+@-webkit-keyframes music {
+  0%{transform: rotate(0deg)}
+  100%{transform: rotate(360deg)}
+}
+
+@keyframes music {
+   0%{transform: rotate(0deg)}
+  100%{transform: rotate(360deg)}
+}
+@-webkit-keyframes opacity {
+  0%{opacity: 1;bottom:2em;}
+  100%{opacity: 0.3;bottom:4em;}
+}
+
+@keyframes opacity {
+   0%{opacity: 1;bottom:2em;}
+  100%{opacity: 0.3;bottom:4em;}
+}
